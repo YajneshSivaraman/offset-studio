@@ -1,0 +1,11 @@
+
+# Build OFFSET Studio with Vite and publish its production output.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Send client-side React routes back to the app entry point.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
