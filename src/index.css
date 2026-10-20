@@ -1,0 +1,65 @@
+
+/* Load Tailwind CSS v4. */
+@import "tailwindcss";
+
+/* Load OFFSET Studio's typography. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Define the Signal Chaos colour palette and font families. */
+@theme {
+  --color-signal: #FF4D00;
+  --color-cyan: #00D9FF;
+  --color-midnight: #111111;
+  --color-warm-white: #F4F0E8;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+}
+
+/* Apply the default page styles. */
+:root {
+  font-family: var(--font-body);
+  color: var(--color-warm-white);
+  background: var(--color-midnight);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make sizing consistent across all elements. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Keep links visually consistent until styled individually. */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Respect visitors who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
