@@ -32,7 +32,7 @@ export default function Process() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="bg-[#111111] px-5 py-24 text-[#F4F0E8] md:px-10 md:py-32">
+    <section id="process" className="bg-[#111111] px-5 py-24 text-[#F4F0E8] md:px-10 md:py-32">
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-16 grid gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">

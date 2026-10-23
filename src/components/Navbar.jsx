@@ -10,7 +10,8 @@ export default function Navbar() {
   const links = [
     { label: 'Work', href: '#work', number: '01' },
     { label: 'Services', href: '#services', number: '02' },
-    { label: 'About', href: '#about', number: '03' },
+    { label: 'Process', href: '#process', number: '03' },
+     { label: 'About', href: '#about', number: '04' },
   ];
 
   return (
